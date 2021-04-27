@@ -8,6 +8,7 @@
 
 	<f:metadata>
 		<f:viewParam name="itemId" value="#{catalogItemDeleteBean.itemId}"></f:viewParam>
+		<f:event type="preRenderView" listener="#{catalogItemDeleteBean.fetchItem()}"/>
 	</f:metadata>
 
 	<ui:define name="body">

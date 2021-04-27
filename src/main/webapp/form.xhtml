@@ -29,7 +29,7 @@
 				<h:outputLabel value="Description" />
 				<h:inputTextarea value="#{catalogItemFormBean.item.description}"></h:inputTextarea>
 			</div>
-			<h:commandButton value="Submit" action=""/>
+			<h:commandButton value="Submit" action="#{catalogItemFormBean.addItem()}"/>
 		</h:form>
 	</ui:define>
 </ui:composition>
